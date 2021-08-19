@@ -1,0 +1,2045 @@
+     |
+     |  __rmod__(self, value, /)
+     |      Return value%self.
+     |
+     |  __rmul__(self, value, /)
+     |      Return value*self.
+     |
+     |  __rsub__(self, value, /)
+     |      Return value-self.
+     |
+     |  __setitem__(self, key, value, /)   
+     |      Set self[key] to value.        
+     |
+     |  __sub__(self, value, /)
+     |      Return self-value.
+     |
+     |  correct_gamma(...)
+     |      correct_gamma (gamma) -> Color 
+     |      Applies a certain gamma value to the Color.
+     |
+     |  normalize(...)
+     |      normalize() -> tuple
+     |      Returns the normalized RGBA values of the Color.     |      set_length(len) -> None
+     |
+     |  Static methods defined here:
+     |
+     |
+     |  Data descriptors defined here:
+     |
+     |  __array_struct__
+     |
+     |  a
+     |      a -> int
+     |
+     |  b
+     |      b -> int
+     |
+     |  cmy
+     |      cmy -> tuple
+     |
+     |  g
+     |      g -> int
+     |
+     |  hsla
+     |      hsla -> tuple
+     |
+     |  hsva
+     |      hsva -> tuple
+     |
+     |  i1i2i3
+     |      i1i2i3 -> tuple
+     |
+     |  r
+     |      r -> int
+     |
+     |
+     |  __hash__ = None
+
+     |
+     |  Methods defined here:
+     |
+     |  display(...)
+     |      display((y, u, v)) -> None
+     |      display() -> None
+     |      set the overlay pixel data
+     |
+     |  get_hardware(...)
+     |      get_hardware(rect) -> int
+     |
+     |  set_location(...)
+     |      set_location(rect) -> None
+     |
+     |  Static methods defined here:
+     |
+
+    class PixelArray(builtins.object)
+     |  PixelArray(Surface) -> PixelArray
+     |
+     |  Methods defined here:
+     |
+     |  __contains__(self, key, /)
+     |      Return key in self.
+     |
+     |  __delitem__(self, key, /)
+     |      Delete self[key].
+     |
+     |  __enter__(...)
+     |      transpose() -> PixelArray
+     |
+     |  __exit__(...)
+     |
+     |  __getitem__(self, key, /)
+     |      Return self[key].
+     |
+     |  __iter__(self, /)
+     |      Implement iter(self).
+     |
+     |  __len__(self, /)
+     |      Return len(self).
+     |
+     |  __repr__(self, /)
+     |      Return repr(self).
+     |
+     |  __setitem__(self, key, value, /)
+     |      Set self[key] to value.
+     |
+     |  close(...)
+     |      transpose() -> PixelArray
+     |
+     |  compare(...)
+     |
+     |  extract(...)
+     |
+     |  make_surface(...)
+     |      make_surface() -> Surface
+     |
+     |  replace(...)
+     |
+     |  transpose(...)
+     |      transpose() -> PixelArray
+     |      Exchanges the x and y axis.
+     |
+     |  Static methods defined here:
+     |
+     |
+     |  Data descriptors defined here:
+     |
+     |  __array_interface__
+     |      Version 3
+     |
+     |  __array_struct__
+     |      Version 3
+     |
+     |  __dict__
+     |
+     |  itemsize
+     |      itemsize -> int
+     |
+     |  ndim
+     |      ndim -> int
+     |
+     |  shape
+     |      shape -> tuple of int's
+     |      Returns the array size.
+     |
+     |  strides
+     |      strides -> tuple of int's
+     |
+     |  surface
+     |      surface -> Surface
+
+    class Rect(builtins.object)
+     |  Rect(object) -> Rect
+     |
+     |  Methods defined here:
+     |
+     |  __bool__(self, /)
+     |      self != 0
+     |
+     |  __copy__(...)
+     |
+     |  __delitem__(self, key, /)
+     |      Delete self[key].
+     |
+     |  __eq__(self, value, /)
+     |      Return self==value.
+     |
+     |  __ge__(self, value, /)
+     |      Return self>=value.
+     |
+     |  __getitem__(self, key, /)
+     |      Return self[key].
+     |
+     |  __gt__(self, value, /)
+     |      Return self>value.
+     |
+     |  __init__(self, /, *args, **kwargs)
+     |
+     |  __le__(self, value, /)
+     |      Return self<=value.
+     |
+     |  __len__(self, /)
+     |      Return len(self).
+     |
+     |  __lt__(self, value, /)
+     |      Return self<value.
+     |
+     |  __ne__(self, value, /)
+     |      Return self!=value.
+     |
+     |  __reduce__(...)
+     |      Helper for pickle.
+     |
+     |  __repr__(self, /)
+     |      Return repr(self).
+     |
+     |  __setitem__(self, key, value, /)
+     |      Set self[key] to value.
+     |
+     |  __str__(self, /)
+     |      Return str(self).
+     |
+     |  clamp(...)
+     |      clamp(Rect) -> Rect
+     |
+     |  clamp_ip(...)
+     |      clamp_ip(Rect) -> None
+     |
+     |  clip(...)
+     |      clip(Rect) -> Rect
+     |
+     |  collidedict(...)
+     |
+     |  collidedictall(...)
+     |
+     |  collidelist(...)
+     |      collidelist(list) -> index
+     |
+     |  collidelistall(...)
+     |      collidelistall(list) -> indices
+     |
+     |  collidepoint(...)
+     |      collidepoint(x, y) -> bool
+     |      collidepoint((x,y)) -> bool
+     |
+     |  colliderect(...)
+     |      colliderect(Rect) -> bool
+     |      test if two rectangles overlap
+     |
+     |  contains(...)
+     |      contains(Rect) -> bool
+     |
+     |  copy(...)
+     |      copy() -> Rect
+     |      copy the rectangle
+     |
+     |  fit(...)
+     |      fit(Rect) -> Rect
+     |
+     |  inflate(...)
+     |      inflate(x, y) -> Rect
+     |
+     |  inflate_ip(...)
+     |      inflate_ip(x, y) -> None
+     |
+     |  move(...)
+     |      move(x, y) -> Rect
+     |      moves the rectangle
+     |
+     |  move_ip(...)
+     |      move_ip(x, y) -> None
+     |      moves the rectangle, in place
+     |
+     |  normalize(...)
+     |      normalize() -> None
+     |      correct negative sizes
+     |
+     |  union(...)
+     |      union(Rect) -> Rect
+     |      joins two rectangles into one
+     |
+     |  union_ip(...)
+     |      union_ip(Rect) -> None
+     |
+     |  unionall(...)
+     |      unionall(Rect_sequence) -> Rect
+     |      the union of many rectangles
+     |
+     |  unionall_ip(...)
+     |
+     |  Static methods defined here:
+     |
+     |
+     |  Data descriptors defined here:
+     |
+     |  __safe_for_unpickling__
+     |
+     |  bottom
+     |
+     |  bottomleft
+     |
+     |  bottomright
+     |
+     |  center
+     |
+     |  centerx
+     |
+     |  centery
+     |
+     |  h
+     |
+     |  height
+     |
+     |  left
+     |
+     |  midbottom
+     |
+     |  midleft
+     |
+     |  midright
+     |
+     |  midtop
+     |
+     |  right
+     |
+     |  size
+     |
+     |  top
+     |
+     |  topleft
+     |
+     |  topright
+     |
+     |  w
+     |
+     |  width
+     |
+     |  x
+     |
+     |  y
+     |
+     |
+     |  __hash__ = None
+
+    class Surface(builtins.object)
+     |
+     |  Methods defined here:
+     |
+     |  __copy__(...)
+     |      copy() -> Surface
+     |      create a new copy of a Surface
+     |
+     |  __init__(self, /, *args, **kwargs)
+     |
+     |  __repr__(self, /)
+     |      Return repr(self).
+     |
+     |  blit(...)
+     |      draw one image onto another
+     |
+     |  blits(...)
+     |      draw many images onto another
+     |
+     |  convert(...)
+     |
+     |  convert_alpha(...)
+     |      convert_alpha() -> Surface
+     |
+     |  copy(...)
+     |      copy() -> Surface
+     |      create a new copy of a Surface
+     |
+     |  fill(...)
+     |      fill Surface with a solid color
+     |
+     |  get_abs_offset(...)
+     |      get_abs_offset() -> (x, y)
+     |
+     |  get_abs_parent(...)
+     |      get_abs_parent() -> Surface
+     |
+     |  get_alpha(...)
+     |      get_alpha() -> int_value
+     |
+     |  get_at(...)
+     |      get_at((x, y)) -> Color
+     |
+     |  get_at_mapped(...)
+     |      get_at_mapped((x, y)) -> Color
+     |
+     |  get_bitsize(...)
+     |      get_bitsize() -> int
+     |
+     |  get_bounding_rect(...)
+     |
+     |  get_buffer(...)
+     |      get_buffer() -> BufferProxy
+     |
+     |  get_bytesize(...)
+     |      get_bytesize() -> int
+     |
+     |  get_clip(...)
+     |      get_clip() -> Rect
+     |
+     |  get_colorkey(...)
+     |      get_colorkey() -> RGB or None
+     |
+     |  get_flags(...)
+     |      get_flags() -> int
+     |
+     |  get_height(...)
+     |      get_height() -> height
+     |      get the height of the Surface
+     |
+     |  get_locked(...)
+     |      get_locked() -> bool
+     |
+     |  get_locks(...)
+     |      get_locks() -> tuple
+     |      Gets the locks for the Surface
+     |
+     |  get_losses(...)
+     |      get_losses() -> (R, G, B, A)
+     |
+     |  get_masks(...)
+     |      get_masks() -> (R, G, B, A)
+     |
+     |  get_offset(...)
+     |      get_offset() -> (x, y)
+     |
+     |  get_palette(...)
+     |
+     |  get_palette_at(...)
+     |      get_palette_at(index) -> RGB
+     |
+     |  get_parent(...)
+     |      get_parent() -> Surface
+     |      find the parent of a subsurface
+     |
+     |  get_pitch(...)
+     |      get_pitch() -> int
+     |
+     |  get_rect(...)
+     |      get_rect(**kwargs) -> Rect
+     |
+     |  get_shifts(...)
+     |      get_shifts() -> (R, G, B, A)
+     |
+     |  get_size(...)
+     |      get_size() -> (width, height)
+     |
+     |  get_view(...)
+     |
+     |  get_width(...)
+     |      get_width() -> width
+     |      get the width of the Surface
+     |
+     |  lock(...)
+     |      lock() -> None
+     |
+     |  map_rgb(...)
+     |      map_rgb(Color) -> mapped_int
+     |
+     |  mustlock(...)
+     |      mustlock() -> bool
+     |
+     |  scroll(...)
+     |      scroll(dx=0, dy=0) -> None
+     |
+     |  set_alpha(...)
+     |      set_alpha(None) -> None
+     |
+     |  set_at(...)
+     |      set_at((x, y), Color) -> None
+     |
+     |  set_clip(...)
+     |      set_clip(rect) -> None
+     |      set_clip(None) -> None
+     |
+     |  set_colorkey(...)
+     |      set_colorkey(None) -> None
+     |      Set the transparent colorkey
+     |
+     |  set_masks(...)
+     |      set_masks((r,g,b,a)) -> None
+     |
+     |  set_palette(...)
+     |
+     |  set_palette_at(...)
+     |
+     |  set_shifts(...)
+     |      set_shifts((r,g,b,a)) -> None
+     |
+     |  subsurface(...)
+     |      subsurface(Rect) -> Surface
+     |
+     |  unlock(...)
+     |      unlock() -> None
+     |
+     |  unmap_rgb(...)
+     |      unmap_rgb(mapped_int) -> Color
+     |
+     |  Static methods defined here:
+     |
+
+     |
+     |  Methods defined here:
+     |
+     |  __copy__(...)
+     |      copy() -> Surface
+     |      create a new copy of a Surface
+     |
+     |  __init__(self, /, *args, **kwargs)
+     |
+     |  __repr__(self, /)
+     |      Return repr(self).
+     |
+     |  blit(...)
+     |      draw one image onto another
+     |
+     |  blits(...)
+     |      draw many images onto another
+     |
+     |  convert(...)
+     |
+     |  convert_alpha(...)
+     |      convert_alpha() -> Surface
+     |
+     |  copy(...)
+     |      copy() -> Surface
+     |      create a new copy of a Surface
+     |
+     |  fill(...)
+     |      fill Surface with a solid color
+     |
+     |  get_abs_offset(...)
+     |      get_abs_offset() -> (x, y)
+     |
+     |  get_abs_parent(...)
+     |      get_abs_parent() -> Surface
+     |
+     |  get_alpha(...)
+     |      get_alpha() -> int_value
+     |
+     |  get_at(...)
+     |      get_at((x, y)) -> Color
+     |
+     |  get_at_mapped(...)
+     |      get_at_mapped((x, y)) -> Color
+     |
+     |  get_bitsize(...)
+     |      get_bitsize() -> int
+     |
+     |  get_bounding_rect(...)
+     |
+     |  get_buffer(...)
+     |      get_buffer() -> BufferProxy
+     |
+     |  get_bytesize(...)
+     |      get_bytesize() -> int
+     |
+     |  get_clip(...)
+     |      get_clip() -> Rect
+     |
+     |  get_colorkey(...)
+     |      get_colorkey() -> RGB or None
+     |
+     |  get_flags(...)
+     |      get_flags() -> int
+     |
+     |  get_height(...)
+     |      get_height() -> height
+     |      get the height of the Surface
+     |
+     |  get_locked(...)
+     |      get_locked() -> bool
+     |
+     |  get_locks(...)
+     |      get_locks() -> tuple
+     |      Gets the locks for the Surface
+     |
+     |  get_losses(...)
+     |      get_losses() -> (R, G, B, A)
+     |
+     |  get_masks(...)
+     |      get_masks() -> (R, G, B, A)
+     |
+     |  get_offset(...)
+     |      get_offset() -> (x, y)
+     |
+     |  get_palette(...)
+     |
+     |  get_palette_at(...)
+     |      get_palette_at(index) -> RGB
+     |
+     |  get_parent(...)
+     |      get_parent() -> Surface
+     |      find the parent of a subsurface
+     |
+     |  get_pitch(...)
+     |      get_pitch() -> int
+     |
+     |  get_rect(...)
+     |      get_rect(**kwargs) -> Rect
+     |
+     |  get_shifts(...)
+     |      get_shifts() -> (R, G, B, A)
+     |
+     |  get_size(...)
+     |      get_size() -> (width, height)
+     |
+     |  get_view(...)
+     |
+     |  get_width(...)
+     |      get_width() -> width
+     |      get the width of the Surface
+     |
+     |  lock(...)
+     |      lock() -> None
+     |
+     |  map_rgb(...)
+     |      map_rgb(Color) -> mapped_int
+     |
+     |  mustlock(...)
+     |      mustlock() -> bool
+     |
+     |  scroll(...)
+     |      scroll(dx=0, dy=0) -> None
+     |
+     |  set_alpha(...)
+     |      set_alpha(None) -> None
+     |
+     |  set_at(...)
+     |      set_at((x, y), Color) -> None
+     |
+     |  set_clip(...)
+     |      set_clip(rect) -> None
+     |      set_clip(None) -> None
+     |
+     |  set_colorkey(...)
+     |      set_colorkey(None) -> None
+     |      Set the transparent colorkey
+     |
+     |  set_masks(...)
+     |      set_masks((r,g,b,a)) -> None
+     |
+     |  set_palette(...)
+     |
+     |  set_palette_at(...)
+     |
+     |  set_shifts(...)
+     |      set_shifts((r,g,b,a)) -> None
+     |
+     |  subsurface(...)
+     |      subsurface(Rect) -> Surface
+     |
+     |  unlock(...)
+     |      unlock() -> None
+     |
+     |  unmap_rgb(...)
+     |      unmap_rgb(mapped_int) -> Color
+     |
+     |  Static methods defined here:
+     |
+
+    class error(builtins.RuntimeError)
+     |  Unspecified run-time error.
+     |
+     |  Method resolution order:
+     |      error
+     |      builtins.RuntimeError
+     |      builtins.Exception
+     |      builtins.BaseException
+     |      builtins.object
+     |
+     |  Data descriptors defined here:
+     |
+     |  __weakref__
+     |
+     |
+     |  __init__(self, /, *args, **kwargs)
+     |
+     |
+     |
+     |
+     |  __delattr__(self, name, /)
+     |      Implement delattr(self, name).
+     |
+     |  __getattribute__(self, name, /)
+     |      Return getattr(self, name).
+     |
+     |  __reduce__(...)
+     |      Helper for pickle.
+     |
+     |  __repr__(self, /)
+     |      Return repr(self).
+     |
+     |  __setattr__(self, name, value, /)
+     |
+     |  __setstate__(...)
+     |
+     |  __str__(self, /)
+     |      Return str(self).
+     |
+     |  with_traceback(...)
+     |      Exception.with_traceback(tb) --
+     |
+     |
+     |  __cause__
+     |      exception cause
+     |
+     |  __context__
+     |      exception context
+     |
+     |  __dict__
+     |
+     |  __suppress_context__
+     |
+     |  __traceback__
+     |
+     |  args
+
+FUNCTIONS
+    Mask(...)
+        Mask(size=(width, height)) -> Mask
+
+    encode_file_path(...)
+
+    encode_string(...)
+        Encode a Unicode or bytes object
+
+    get_array_interface(...)
+
+    get_error(...)
+        get_error() -> errorstr
+        get the current error message
+
+    get_init(...)
+        get_init() -> bool
+
+    get_sdl_byteorder(...)
+        get_sdl_byteorder() -> int
+        get the byte order of SDL
+
+    get_sdl_version(...)
+        get the version number of SDL
+
+    init(...)
+        init() -> (numpass, numfail)
+
+    packager_imports()
+
+    quit(...)
+        quit() -> None
+        uninitialize all pygame modules
+
+    register_quit(...)
+        register_quit(callable) -> None
+
+    segfault(...)
+        crash
+
+    set_error(...)
+        set_error(error_msg) -> None
+        set the current error message
+
+    warn_unwanted_files()
+        warn about unneeded old files
+
+DATA
+    ACTIVEEVENT = 1
+    ANYFORMAT = 268435456
+    ASYNCBLIT = 4
+    AUDIODEVICEADDED = -1
+    AUDIODEVICEREMOVED = -1
+    AUDIO_ALLOW_ANY_CHANGE = -1
+    AUDIO_ALLOW_CHANNELS_CHANGE = -1
+    AUDIO_ALLOW_FORMAT_CHANGE = -1
+    AUDIO_ALLOW_FREQUENCY_CHANGE = -1
+    AUDIO_S16 = 32784
+    AUDIO_S16LSB = 32784
+    AUDIO_S16MSB = 36880
+    AUDIO_S16SYS = 32784
+    AUDIO_S8 = 32776
+    AUDIO_U16 = 16
+    AUDIO_U16LSB = 16
+    AUDIO_U16MSB = 4112
+    AUDIO_U16SYS = 16
+    AUDIO_U8 = 8
+    BIG_ENDIAN = 4321
+    BLEND_ADD = 1
+    BLEND_MAX = 5
+    BLEND_MIN = 4
+    BLEND_MULT = 3
+    BLEND_PREMULTIPLIED = 17
+    BLEND_RGBA_ADD = 6
+    BLEND_RGBA_MAX = 16
+    BLEND_RGBA_MIN = 9
+    BLEND_RGBA_MULT = 8
+    BLEND_RGBA_SUB = 7
+    BLEND_RGB_ADD = 1
+    BLEND_RGB_MAX = 5
+    BLEND_RGB_MIN = 4
+    BLEND_RGB_MULT = 3
+    BLEND_RGB_SUB = 2
+    BLEND_SUB = 2
+    BUTTON_LEFT = 1
+    BUTTON_MIDDLE = 2
+    BUTTON_RIGHT = 3
+    BUTTON_WHEELDOWN = 5
+    BUTTON_WHEELUP = 4
+    BUTTON_X1 = 6
+    BUTTON_X2 = 7
+    DOUBLEBUF = 1073741824
+    DROPBEGIN = -1
+    DROPCOMPLETE = -1
+    DROPFILE = -1
+    DROPTEXT = -1
+    FINGERDOWN = -1
+    FINGERMOTION = -1
+    FINGERUP = -1
+    FULLSCREEN = -2147483648
+    GL_ACCELERATED_VISUAL = 15
+    GL_ACCUM_ALPHA_SIZE = 11
+    GL_ACCUM_BLUE_SIZE = 10
+    GL_ACCUM_GREEN_SIZE = 9
+    GL_ACCUM_RED_SIZE = 8
+    GL_ALPHA_SIZE = 3
+    GL_BLUE_SIZE = 2
+    GL_BUFFER_SIZE = 4
+    GL_DEPTH_SIZE = 6
+    GL_DOUBLEBUFFER = 5
+    GL_GREEN_SIZE = 1
+    GL_MULTISAMPLEBUFFERS = 13
+    GL_MULTISAMPLESAMPLES = 14
+    GL_RED_SIZE = 0
+    GL_STENCIL_SIZE = 7
+    GL_STEREO = 12
+    GL_SWAP_CONTROL = 16
+    HAT_CENTERED = 0
+    HAT_DOWN = 4
+    HAT_LEFT = 8
+    HAT_LEFTDOWN = 12
+    HAT_LEFTUP = 9
+    HAT_RIGHT = 2
+    HAT_RIGHTDOWN = 6
+    HAT_RIGHTUP = 3
+    HAT_UP = 1
+    HAVE_NEWBUF = 1
+    HWACCEL = 256
+    HWPALETTE = 536870912
+    HWSURFACE = 1
+    IYUV_OVERLAY = 1448433993
+    JOYAXISMOTION = 7
+    JOYBALLMOTION = 8
+    JOYBUTTONDOWN = 10
+    JOYBUTTONUP = 11
+    JOYHATMOTION = 9
+    KEYDOWN = 2
+    KEYUP = 3
+    KMOD_ALT = 768
+    KMOD_CAPS = 8192
+    KMOD_CTRL = 192
+    KMOD_LALT = 256
+    KMOD_LCTRL = 64
+    KMOD_LMETA = 1024
+    KMOD_LSHIFT = 1
+    KMOD_META = 3072
+    KMOD_MODE = 16384
+    KMOD_NONE = 0
+    KMOD_NUM = 4096
+    KMOD_RALT = 512
+    KMOD_RCTRL = 128
+    KMOD_RMETA = 2048
+    KMOD_RSHIFT = 2
+    KMOD_SHIFT = 3
+    K_0 = 48
+    K_1 = 49
+    K_2 = 50
+    K_3 = 51
+    K_4 = 52
+    K_5 = 53
+    K_6 = 54
+    K_7 = 55
+    K_8 = 56
+    K_9 = 57
+    K_AMPERSAND = 38
+    K_ASTERISK = 42
+    K_AT = 64
+    K_BACKQUOTE = 96
+    K_BACKSLASH = 92
+    K_BACKSPACE = 8
+    K_BREAK = 318
+    K_CAPSLOCK = 301
+    K_CARET = 94
+    K_CLEAR = 12
+    K_COLON = 58
+    K_COMMA = 44
+    K_DELETE = 127
+    K_DOLLAR = 36
+    K_DOWN = 274
+    K_END = 279
+    K_EQUALS = 61
+    K_ESCAPE = 27
+    K_EURO = 321
+    K_EXCLAIM = 33
+    K_F1 = 282
+    K_F10 = 291
+    K_F11 = 292
+    K_F12 = 293
+    K_F13 = 294
+    K_F14 = 295
+    K_F15 = 296
+    K_F2 = 283
+    K_F3 = 284
+    K_F4 = 285
+    K_F5 = 286
+    K_F6 = 287
+    K_F7 = 288
+    K_F8 = 289
+    K_F9 = 290
+    K_FIRST = 0
+    K_GREATER = 62
+    K_HASH = 35
+    K_HELP = 315
+    K_HOME = 278
+    K_INSERT = 277
+    K_KP0 = 256
+    K_KP1 = 257
+    K_KP2 = 258
+    K_KP3 = 259
+    K_KP4 = 260
+    K_KP5 = 261
+    K_KP6 = 262
+    K_KP7 = 263
+    K_KP8 = 264
+    K_KP9 = 265
+    K_KP_DIVIDE = 267
+    K_KP_ENTER = 271
+    K_KP_EQUALS = 272
+    K_KP_MINUS = 269
+    K_KP_MULTIPLY = 268
+    K_KP_PERIOD = 266
+    K_KP_PLUS = 270
+    K_LALT = 308
+    K_LAST = 323
+    K_LCTRL = 306
+    K_LEFT = 276
+    K_LEFTBRACKET = 91
+    K_LEFTPAREN = 40
+    K_LESS = 60
+    K_LMETA = 310
+    K_LSHIFT = 304
+    K_LSUPER = 311
+    K_MENU = 319
+    K_MINUS = 45
+    K_MODE = 313
+    K_NUMLOCK = 300
+    K_PAGEDOWN = 281
+    K_PAGEUP = 280
+    K_PAUSE = 19
+    K_PERIOD = 46
+    K_PLUS = 43
+    K_POWER = 320
+    K_PRINT = 316
+    K_QUESTION = 63
+    K_QUOTE = 39
+    K_QUOTEDBL = 34
+    K_RALT = 307
+    K_RCTRL = 305
+    K_RETURN = 13
+    K_RIGHT = 275
+    K_RIGHTBRACKET = 93
+    K_RIGHTPAREN = 41
+    K_RMETA = 309
+    K_RSHIFT = 303
+    K_RSUPER = 312
+    K_SCROLLOCK = 302
+    K_SEMICOLON = 59
+    K_SLASH = 47
+    K_SPACE = 32
+    K_SYSREQ = 317
+    K_TAB = 9
+    K_UNDERSCORE = 95
+    K_UNKNOWN = 0
+    K_UP = 273
+    K_a = 97
+    K_b = 98
+    K_c = 99
+    K_d = 100
+    K_e = 101
+    K_f = 102
+    K_g = 103
+    K_h = 104
+    K_i = 105
+    K_j = 106
+    K_k = 107
+    K_l = 108
+    K_m = 109
+    K_n = 110
+    K_o = 111
+    K_p = 112
+    K_q = 113
+    K_r = 114
+    K_s = 115
+    K_t = 116
+    K_u = 117
+    K_v = 118
+    K_w = 119
+    K_x = 120
+    K_y = 121
+    K_z = 122
+    LIL_ENDIAN = 1234
+    MOUSEBUTTONDOWN = 5
+    MOUSEBUTTONUP = 6
+    MOUSEMOTION = 4
+    MOUSEWHEEL = -1
+    MULTIGESTURE = -1
+    NOEVENT = 0
+    NOFRAME = 32
+    NUMEVENTS = 32
+    OPENGL = 2
+    OPENGLBLIT = 10
+    PREALLOC = 16777216
+    QUIT = 12
+    RESIZABLE = 16
+    RLEACCEL = 16384
+    RLEACCELOK = 8192
+    SCRAP_BMP = 'image/bmp'
+    SCRAP_CLIPBOARD = 0
+    SCRAP_PBM = 'image/pbm'
+    SCRAP_PPM = 'image/ppm'
+    SCRAP_SELECTION = 1
+    SCRAP_TEXT = 'text/plain'
+    SRCALPHA = 65536
+    SRCCOLORKEY = 4096
+    SWSURFACE = 0
+    SYSWMEVENT = 13
+    TEXTEDITING = -1
+    TEXTINPUT = -1
+    TIMER_RESOLUTION = 10
+    USEREVENT = 24
+    USEREVENT_DROPFILE = 4096
+    UYVY_OVERLAY = 1498831189
+    VIDEOEXPOSE = 17
+    VIDEORESIZE = 16
+    WINDOWEVENT = -1
+    WINDOWEVENT_CLOSE = -1
+    YUY2_OVERLAY = 844715353
+    YV12_OVERLAY = 842094169
+    YVYU_OVERLAY = 1431918169
+    movie = <pygame.MissingModule object>
+    rev = ''
+    ver = '1.9.6'     |      set_length(len) -> None
+     |
+     |  Static methods defined here:
+     |
+     |
+     |  Data descriptors defined here:
+     |
+     |  __array_struct__
+     |
+     |  a
+     |      a -> int
+     |
+     |  b
+     |      b -> int
+     |
+     |  cmy
+     |      cmy -> tuple
+     |
+     |  g
+     |      g -> int
+     |
+     |  hsla
+     |      hsla -> tuple
+     |
+     |  hsva
+     |      hsva -> tuple
+     |
+     |  i1i2i3
+     |      i1i2i3 -> tuple
+     |
+     |  r
+     |      r -> int
+     |
+     |
+     |  __hash__ = None
+
+     |
+     |  Methods defined here:
+     |
+     |  display(...)
+     |      display((y, u, v)) -> None
+     |      display() -> None
+     |      set the overlay pixel data
+     |
+     |  get_hardware(...)
+     |      get_hardware(rect) -> int
+     |
+     |  set_location(...)
+     |      set_location(rect) -> None
+     |
+     |  Static methods defined here:
+     |
+
+    class PixelArray(builtins.object)
+     |  PixelArray(Surface) -> PixelArray
+     |
+     |  Methods defined here:
+     |
+     |  __contains__(self, key, /)
+     |      Return key in self.
+     |
+     |  __delitem__(self, key, /)
+     |      Delete self[key].
+     |
+     |  __enter__(...)
+     |      transpose() -> PixelArray
+     |
+     |  __exit__(...)
+     |
+     |  __getitem__(self, key, /)
+     |      Return self[key].
+     |
+     |  __iter__(self, /)
+     |      Implement iter(self).
+     |
+     |  __len__(self, /)
+     |      Return len(self).
+     |
+     |  __repr__(self, /)
+     |      Return repr(self).
+     |
+     |  __setitem__(self, key, value, /)
+     |      Set self[key] to value.
+     |
+     |  close(...)
+     |      transpose() -> PixelArray
+     |
+     |  compare(...)
+     |
+     |  extract(...)
+     |
+     |  make_surface(...)
+     |      make_surface() -> Surface
+     |
+     |  replace(...)
+     |
+     |  transpose(...)
+     |      transpose() -> PixelArray
+     |      Exchanges the x and y axis.
+     |
+     |  Static methods defined here:
+     |
+     |
+     |  Data descriptors defined here:
+     |
+     |  __array_interface__
+     |      Version 3
+     |
+     |  __array_struct__
+     |      Version 3
+     |
+     |  __dict__
+     |
+     |  itemsize
+     |      itemsize -> int
+     |
+     |  ndim
+     |      ndim -> int
+     |
+     |  shape
+     |      shape -> tuple of int's
+     |      Returns the array size.
+     |
+     |  strides
+     |      strides -> tuple of int's
+     |
+     |  surface
+     |      surface -> Surface
+
+    class Rect(builtins.object)
+     |  Rect(object) -> Rect
+     |
+     |  Methods defined here:
+     |
+     |  __bool__(self, /)
+     |      self != 0
+     |
+     |  __copy__(...)
+     |
+     |  __delitem__(self, key, /)
+     |      Delete self[key].
+     |
+     |  __eq__(self, value, /)
+     |      Return self==value.
+     |
+     |  __ge__(self, value, /)
+     |      Return self>=value.
+     |
+     |  __getitem__(self, key, /)
+     |      Return self[key].
+     |
+     |  __gt__(self, value, /)
+     |      Return self>value.
+     |
+     |  __init__(self, /, *args, **kwargs)
+     |
+     |  __le__(self, value, /)
+     |      Return self<=value.
+     |
+     |  __len__(self, /)
+     |      Return len(self).
+     |
+     |  __lt__(self, value, /)
+     |      Return self<value.
+     |
+     |  __ne__(self, value, /)
+     |      Return self!=value.
+     |
+     |  __reduce__(...)
+     |      Helper for pickle.
+     |
+     |  __repr__(self, /)
+     |      Return repr(self).
+     |
+     |  __setitem__(self, key, value, /)
+     |      Set self[key] to value.
+     |
+     |  __str__(self, /)
+     |      Return str(self).
+     |
+     |  clamp(...)
+     |      clamp(Rect) -> Rect
+     |
+     |  clamp_ip(...)
+     |      clamp_ip(Rect) -> None
+     |
+     |  clip(...)
+     |      clip(Rect) -> Rect
+     |
+     |  collidedict(...)
+     |
+     |  collidedictall(...)
+     |
+     |  collidelist(...)
+     |      collidelist(list) -> index
+     |
+     |  collidelistall(...)
+     |      collidelistall(list) -> indices
+     |
+     |  collidepoint(...)
+     |      collidepoint(x, y) -> bool
+     |      collidepoint((x,y)) -> bool
+     |
+     |  colliderect(...)
+     |      colliderect(Rect) -> bool
+     |      test if two rectangles overlap
+     |
+     |  contains(...)
+     |      contains(Rect) -> bool
+     |
+     |  copy(...)
+     |      copy() -> Rect
+     |      copy the rectangle
+     |
+     |  fit(...)
+     |      fit(Rect) -> Rect
+     |
+     |  inflate(...)
+     |      inflate(x, y) -> Rect
+     |
+     |  inflate_ip(...)
+     |      inflate_ip(x, y) -> None
+     |
+     |  move(...)
+     |      move(x, y) -> Rect
+     |      moves the rectangle
+     |
+     |  move_ip(...)
+     |      move_ip(x, y) -> None
+     |      moves the rectangle, in place
+     |
+     |  normalize(...)
+     |      normalize() -> None
+     |      correct negative sizes
+     |
+     |  union(...)
+     |      union(Rect) -> Rect
+     |      joins two rectangles into one
+     |
+     |  union_ip(...)
+     |      union_ip(Rect) -> None
+     |
+     |  unionall(...)
+     |      unionall(Rect_sequence) -> Rect
+     |      the union of many rectangles
+     |
+     |  unionall_ip(...)
+     |
+     |  Static methods defined here:
+     |
+     |
+     |  Data descriptors defined here:
+     |
+     |  __safe_for_unpickling__
+     |
+     |  bottom
+     |
+     |  bottomleft
+     |
+     |  bottomright
+     |
+     |  center
+     |
+     |  centerx
+     |
+     |  centery
+     |
+     |  h
+     |
+     |  height
+     |
+     |  left
+     |
+     |  midbottom
+     |
+     |  midleft
+     |
+     |  midright
+     |
+     |  midtop
+     |
+     |  right
+     |
+     |  size
+     |
+     |  top
+     |
+     |  topleft
+     |
+     |  topright
+     |
+     |  w
+     |
+     |  width
+     |
+     |  x
+     |
+     |  y
+     |
+     |
+     |  __hash__ = None
+
+    class Surface(builtins.object)
+     |
+     |  Methods defined here:
+     |
+     |  __copy__(...)
+     |      copy() -> Surface
+     |      create a new copy of a Surface
+     |
+     |  __init__(self, /, *args, **kwargs)
+     |
+     |  __repr__(self, /)
+     |      Return repr(self).
+     |
+     |  blit(...)
+     |      draw one image onto another
+     |
+     |  blits(...)
+     |      draw many images onto another
+     |
+     |  convert(...)
+     |
+     |  convert_alpha(...)
+     |      convert_alpha() -> Surface
+     |
+     |  copy(...)
+     |      copy() -> Surface
+     |      create a new copy of a Surface
+     |
+     |  fill(...)
+     |      fill Surface with a solid color
+     |
+     |  get_abs_offset(...)
+     |      get_abs_offset() -> (x, y)
+     |
+     |  get_abs_parent(...)
+     |      get_abs_parent() -> Surface
+     |
+     |  get_alpha(...)
+     |      get_alpha() -> int_value
+     |
+     |  get_at(...)
+     |      get_at((x, y)) -> Color
+     |
+     |  get_at_mapped(...)
+     |      get_at_mapped((x, y)) -> Color
+     |
+     |  get_bitsize(...)
+     |      get_bitsize() -> int
+     |
+     |  get_bounding_rect(...)
+     |
+     |  get_buffer(...)
+     |      get_buffer() -> BufferProxy
+     |
+     |  get_bytesize(...)
+     |      get_bytesize() -> int
+     |
+     |  get_clip(...)
+     |      get_clip() -> Rect
+     |
+     |  get_colorkey(...)
+     |      get_colorkey() -> RGB or None
+     |
+     |  get_flags(...)
+     |      get_flags() -> int
+     |
+     |  get_height(...)
+     |      get_height() -> height
+     |      get the height of the Surface
+     |
+     |  get_locked(...)
+     |      get_locked() -> bool
+     |
+     |  get_locks(...)
+     |      get_locks() -> tuple
+     |      Gets the locks for the Surface
+     |
+     |  get_losses(...)
+     |      get_losses() -> (R, G, B, A)
+     |
+     |  get_masks(...)
+     |      get_masks() -> (R, G, B, A)
+     |
+     |  get_offset(...)
+     |      get_offset() -> (x, y)
+     |
+     |  get_palette(...)
+     |
+     |  get_palette_at(...)
+     |      get_palette_at(index) -> RGB
+     |
+     |  get_parent(...)
+     |      get_parent() -> Surface
+     |      find the parent of a subsurface
+     |
+     |  get_pitch(...)
+     |      get_pitch() -> int
+     |
+     |  get_rect(...)
+     |      get_rect(**kwargs) -> Rect
+     |
+     |  get_shifts(...)
+     |      get_shifts() -> (R, G, B, A)
+     |
+     |  get_size(...)
+     |      get_size() -> (width, height)
+     |
+     |  get_view(...)
+     |
+     |  get_width(...)
+     |      get_width() -> width
+     |      get the width of the Surface
+     |
+     |  lock(...)
+     |      lock() -> None
+     |
+     |  map_rgb(...)
+     |      map_rgb(Color) -> mapped_int
+     |
+     |  mustlock(...)
+     |      mustlock() -> bool
+     |
+     |  scroll(...)
+     |      scroll(dx=0, dy=0) -> None
+     |
+     |  set_alpha(...)
+     |      set_alpha(None) -> None
+     |
+     |  set_at(...)
+     |      set_at((x, y), Color) -> None
+     |
+     |  set_clip(...)
+     |      set_clip(rect) -> None
+     |      set_clip(None) -> None
+     |
+     |  set_colorkey(...)
+     |      set_colorkey(None) -> None
+     |      Set the transparent colorkey
+     |
+     |  set_masks(...)
+     |      set_masks((r,g,b,a)) -> None
+     |
+     |  set_palette(...)
+     |
+     |  set_palette_at(...)
+     |
+     |  set_shifts(...)
+     |      set_shifts((r,g,b,a)) -> None
+     |
+     |  subsurface(...)
+     |      subsurface(Rect) -> Surface
+     |
+     |  unlock(...)
+     |      unlock() -> None
+     |
+     |  unmap_rgb(...)
+     |      unmap_rgb(mapped_int) -> Color
+     |
+     |  Static methods defined here:
+     |
+
+     |
+     |  Methods defined here:
+     |
+     |  __copy__(...)
+     |      copy() -> Surface
+     |      create a new copy of a Surface
+     |
+     |  __init__(self, /, *args, **kwargs)
+     |
+     |  __repr__(self, /)
+     |      Return repr(self).
+     |
+     |  blit(...)
+     |      draw one image onto another
+     |
+     |  blits(...)
+     |      draw many images onto another
+     |
+     |  convert(...)
+     |
+     |  convert_alpha(...)
+     |      convert_alpha() -> Surface
+     |
+     |  copy(...)
+     |      copy() -> Surface
+     |      create a new copy of a Surface
+     |
+     |  fill(...)
+     |      fill Surface with a solid color
+     |
+     |  get_abs_offset(...)
+     |      get_abs_offset() -> (x, y)
+     |
+     |  get_abs_parent(...)
+     |      get_abs_parent() -> Surface
+     |
+     |  get_alpha(...)
+     |      get_alpha() -> int_value
+     |
+     |  get_at(...)
+     |      get_at((x, y)) -> Color
+     |
+     |  get_at_mapped(...)
+     |      get_at_mapped((x, y)) -> Color
+     |
+     |  get_bitsize(...)
+     |      get_bitsize() -> int
+     |
+     |  get_bounding_rect(...)
+     |
+     |  get_buffer(...)
+     |      get_buffer() -> BufferProxy
+     |
+     |  get_bytesize(...)
+     |      get_bytesize() -> int
+     |
+     |  get_clip(...)
+     |      get_clip() -> Rect
+     |
+     |  get_colorkey(...)
+     |      get_colorkey() -> RGB or None
+     |
+     |  get_flags(...)
+     |      get_flags() -> int
+     |
+     |  get_height(...)
+     |      get_height() -> height
+     |      get the height of the Surface
+     |
+     |  get_locked(...)
+     |      get_locked() -> bool
+     |
+     |  get_locks(...)
+     |      get_locks() -> tuple
+     |      Gets the locks for the Surface
+     |
+     |  get_losses(...)
+     |      get_losses() -> (R, G, B, A)
+     |
+     |  get_masks(...)
+     |      get_masks() -> (R, G, B, A)
+     |
+     |  get_offset(...)
+     |      get_offset() -> (x, y)
+     |
+     |  get_palette(...)
+     |
+     |  get_palette_at(...)
+     |      get_palette_at(index) -> RGB
+     |
+     |  get_parent(...)
+     |      get_parent() -> Surface
+     |      find the parent of a subsurface
+     |
+     |  get_pitch(...)
+     |      get_pitch() -> int
+     |
+     |  get_rect(...)
+     |      get_rect(**kwargs) -> Rect
+     |
+     |  get_shifts(...)
+     |      get_shifts() -> (R, G, B, A)
+     |
+     |  get_size(...)
+     |      get_size() -> (width, height)
+     |
+     |  get_view(...)
+     |
+     |  get_width(...)
+     |      get_width() -> width
+     |      get the width of the Surface
+     |
+     |  lock(...)
+     |      lock() -> None
+     |
+     |  map_rgb(...)
+     |      map_rgb(Color) -> mapped_int
+     |
+     |  mustlock(...)
+     |      mustlock() -> bool
+     |
+     |  scroll(...)
+     |      scroll(dx=0, dy=0) -> None
+     |
+     |  set_alpha(...)
+     |      set_alpha(None) -> None
+     |
+     |  set_at(...)
+     |      set_at((x, y), Color) -> None
+     |
+     |  set_clip(...)
+     |      set_clip(rect) -> None
+     |      set_clip(None) -> None
+     |
+     |  set_colorkey(...)
+     |      set_colorkey(None) -> None
+     |      Set the transparent colorkey
+     |
+     |  set_masks(...)
+     |      set_masks((r,g,b,a)) -> None
+     |
+     |  set_palette(...)
+     |
+     |  set_palette_at(...)
+     |
+     |  set_shifts(...)
+     |      set_shifts((r,g,b,a)) -> None
+     |
+     |  subsurface(...)
+     |      subsurface(Rect) -> Surface
+     |
+     |  unlock(...)
+     |      unlock() -> None
+     |
+     |  unmap_rgb(...)
+     |      unmap_rgb(mapped_int) -> Color
+     |
+     |  Static methods defined here:
+     |
+
+    class error(builtins.RuntimeError)
+     |  Unspecified run-time error.
+     |
+     |  Method resolution order:
+     |      error
+     |      builtins.RuntimeError
+     |      builtins.Exception
+     |      builtins.BaseException
+     |      builtins.object
+     |
+     |  Data descriptors defined here:
+     |
+     |  __weakref__
+     |
+     |
+     |  __init__(self, /, *args, **kwargs)
+     |
+     |
+     |
+     |
+     |  __delattr__(self, name, /)
+     |      Implement delattr(self, name).
+     |
+     |  __getattribute__(self, name, /)
+     |      Return getattr(self, name).
+     |
+     |  __reduce__(...)
+     |      Helper for pickle.
+     |
+     |  __repr__(self, /)
+     |      Return repr(self).
+     |
+     |  __setattr__(self, name, value, /)
+     |
+     |  __setstate__(...)
+     |
+     |  __str__(self, /)
+     |      Return str(self).
+     |
+     |  with_traceback(...)
+     |      Exception.with_traceback(tb) --
+     |
+     |
+     |  __cause__
+     |      exception cause
+     |
+     |  __context__
+     |      exception context
+     |
+     |  __dict__
+     |
+     |  __suppress_context__
+     |
+     |  __traceback__
+     |
+     |  args
+
+FUNCTIONS
+    Mask(...)
+        Mask(size=(width, height)) -> Mask
+
+    encode_file_path(...)
+
+    encode_string(...)
+        Encode a Unicode or bytes object
+
+    get_array_interface(...)
+
+    get_error(...)
+        get_error() -> errorstr
+        get the current error message
+
+    get_init(...)
+        get_init() -> bool
+
+    get_sdl_byteorder(...)
+        get_sdl_byteorder() -> int
+        get the byte order of SDL
+
+    get_sdl_version(...)
+        get the version number of SDL
+
+    init(...)
+        init() -> (numpass, numfail)
+
+    packager_imports()
+
+    quit(...)
+        quit() -> None
+        uninitialize all pygame modules
+
+    register_quit(...)
+        register_quit(callable) -> None
+
+    segfault(...)
+        crash
+
+    set_error(...)
+        set_error(error_msg) -> None
+        set the current error message
+
+    warn_unwanted_files()
+        warn about unneeded old files
+
+DATA
+    ACTIVEEVENT = 1
+    ANYFORMAT = 268435456
+    ASYNCBLIT = 4
+    AUDIODEVICEADDED = -1
+    AUDIODEVICEREMOVED = -1
+    AUDIO_ALLOW_ANY_CHANGE = -1
+    AUDIO_ALLOW_CHANNELS_CHANGE = -1
+    AUDIO_ALLOW_FORMAT_CHANGE = -1
+    AUDIO_ALLOW_FREQUENCY_CHANGE = -1
+    AUDIO_S16 = 32784
+    AUDIO_S16LSB = 32784
+    AUDIO_S16MSB = 36880
+    AUDIO_S16SYS = 32784
+    AUDIO_S8 = 32776
+    AUDIO_U16 = 16
+    AUDIO_U16LSB = 16
+    AUDIO_U16MSB = 4112
+    AUDIO_U16SYS = 16
+    AUDIO_U8 = 8
+    BIG_ENDIAN = 4321
+    BLEND_ADD = 1
+    BLEND_MAX = 5
+    BLEND_MIN = 4
+    BLEND_MULT = 3
+    BLEND_PREMULTIPLIED = 17
+    BLEND_RGBA_ADD = 6
+    BLEND_RGBA_MAX = 16
+    BLEND_RGBA_MIN = 9
+    BLEND_RGBA_MULT = 8
+    BLEND_RGBA_SUB = 7
+    BLEND_RGB_ADD = 1
+    BLEND_RGB_MAX = 5
+    BLEND_RGB_MIN = 4
+    BLEND_RGB_MULT = 3
+    BLEND_RGB_SUB = 2
+    BLEND_SUB = 2
+    BUTTON_LEFT = 1
+    BUTTON_MIDDLE = 2
+    BUTTON_RIGHT = 3
+    BUTTON_WHEELDOWN = 5
+    BUTTON_WHEELUP = 4
+    BUTTON_X1 = 6
+    BUTTON_X2 = 7
+    DOUBLEBUF = 1073741824
+    DROPBEGIN = -1
+    DROPCOMPLETE = -1
+    DROPFILE = -1
+    DROPTEXT = -1
+    FINGERDOWN = -1
+    FINGERMOTION = -1
+    FINGERUP = -1
+    FULLSCREEN = -2147483648
+    GL_ACCELERATED_VISUAL = 15
+    GL_ACCUM_ALPHA_SIZE = 11
+    GL_ACCUM_BLUE_SIZE = 10
+    GL_ACCUM_GREEN_SIZE = 9
+    GL_ACCUM_RED_SIZE = 8
+    GL_ALPHA_SIZE = 3
+    GL_BLUE_SIZE = 2
+    GL_BUFFER_SIZE = 4
+    GL_DEPTH_SIZE = 6
+    GL_DOUBLEBUFFER = 5
+    GL_GREEN_SIZE = 1
+    GL_MULTISAMPLEBUFFERS = 13
+    GL_MULTISAMPLESAMPLES = 14
+    GL_RED_SIZE = 0
+    GL_STENCIL_SIZE = 7
+    GL_STEREO = 12
+    GL_SWAP_CONTROL = 16
+    HAT_CENTERED = 0
+    HAT_DOWN = 4
+    HAT_LEFT = 8
+    HAT_LEFTDOWN = 12
+    HAT_LEFTUP = 9
+    HAT_RIGHT = 2
+    HAT_RIGHTDOWN = 6
+    HAT_RIGHTUP = 3
+    HAT_UP = 1
+    HAVE_NEWBUF = 1
+    HWACCEL = 256
+    HWPALETTE = 536870912
+    HWSURFACE = 1
+    IYUV_OVERLAY = 1448433993
+    JOYAXISMOTION = 7
+    JOYBALLMOTION = 8
+    JOYBUTTONDOWN = 10
+    JOYBUTTONUP = 11
+    JOYHATMOTION = 9
+    KEYDOWN = 2
+    KEYUP = 3
+    KMOD_ALT = 768
+    KMOD_CAPS = 8192
+    KMOD_CTRL = 192
+    KMOD_LALT = 256
+    KMOD_LCTRL = 64
+    KMOD_LMETA = 1024
+    KMOD_LSHIFT = 1
+    KMOD_META = 3072
+    KMOD_MODE = 16384
+    KMOD_NONE = 0
+    KMOD_NUM = 4096
+    KMOD_RALT = 512
+    KMOD_RCTRL = 128
+    KMOD_RMETA = 2048
+    KMOD_RSHIFT = 2
+    KMOD_SHIFT = 3
+    K_0 = 48
+    K_1 = 49
+    K_2 = 50
+    K_3 = 51
+    K_4 = 52
+    K_5 = 53
+    K_6 = 54
+    K_7 = 55
+    K_8 = 56
+    K_9 = 57
+    K_AMPERSAND = 38
+    K_ASTERISK = 42
+    K_AT = 64
+    K_BACKQUOTE = 96
+    K_BACKSLASH = 92
+    K_BACKSPACE = 8
+    K_BREAK = 318
+    K_CAPSLOCK = 301
+    K_CARET = 94
+    K_CLEAR = 12
+    K_COLON = 58
+    K_COMMA = 44
+    K_DELETE = 127
+    K_DOLLAR = 36
+    K_DOWN = 274
+    K_END = 279
+    K_EQUALS = 61
+    K_ESCAPE = 27
+    K_EURO = 321
+    K_EXCLAIM = 33
+    K_F1 = 282
+    K_F10 = 291
+    K_F11 = 292
+    K_F12 = 293
+    K_F13 = 294
+    K_F14 = 295
+    K_F15 = 296
+    K_F2 = 283
+    K_F3 = 284
+    K_F4 = 285
+    K_F5 = 286
+    K_F6 = 287
+    K_F7 = 288
+    K_F8 = 289
+    K_F9 = 290
+    K_FIRST = 0
+    K_GREATER = 62
+    K_HASH = 35
+    K_HELP = 315
+    K_HOME = 278
+    K_INSERT = 277
+    K_KP0 = 256
+    K_KP1 = 257
+    K_KP2 = 258
+    K_KP3 = 259
+    K_KP4 = 260
+    K_KP5 = 261
+    K_KP6 = 262
+    K_KP7 = 263
+    K_KP8 = 264
+    K_KP9 = 265
+    K_KP_DIVIDE = 267
+    K_KP_ENTER = 271
+    K_KP_EQUALS = 272
+    K_KP_MINUS = 269
+    K_KP_MULTIPLY = 268
+    K_KP_PERIOD = 266
+    K_KP_PLUS = 270
+    K_LALT = 308
+    K_LAST = 323
+    K_LCTRL = 306
+    K_LEFT = 276
+    K_LEFTBRACKET = 91
+    K_LEFTPAREN = 40
+    K_LESS = 60
+    K_LMETA = 310
+    K_LSHIFT = 304
+    K_LSUPER = 311
+    K_MENU = 319
+    K_MINUS = 45
+    K_MODE = 313
+    K_NUMLOCK = 300
+    K_PAGEDOWN = 281
+    K_PAGEUP = 280
+    K_PAUSE = 19
+    K_PERIOD = 46
+    K_PLUS = 43
+    K_POWER = 320
+    K_PRINT = 316
+    K_QUESTION = 63
+    K_QUOTE = 39
+    K_QUOTEDBL = 34
+    K_RALT = 307
+    K_RCTRL = 305
+    K_RETURN = 13
+    K_RIGHT = 275
+    K_RIGHTBRACKET = 93
+    K_RIGHTPAREN = 41
+    K_RMETA = 309
+    K_RSHIFT = 303
+    K_RSUPER = 312
+    K_SCROLLOCK = 302
+    K_SEMICOLON = 59
+    K_SLASH = 47
+    K_SPACE = 32
+    K_SYSREQ = 317
+    K_TAB = 9
+    K_UNDERSCORE = 95
+    K_UNKNOWN = 0
+    K_UP = 273
+    K_a = 97
+    K_b = 98
+    K_c = 99
+    K_d = 100
+    K_e = 101
+    K_f = 102
+    K_g = 103
+    K_h = 104
+    K_i = 105
+    K_j = 106
+    K_k = 107
+    K_l = 108
+    K_m = 109
+    K_n = 110
+    K_o = 111
+    K_p = 112
+    K_q = 113
+    K_r = 114
+    K_s = 115
+    K_t = 116
+    K_u = 117
+    K_v = 118
+    K_w = 119
+    K_x = 120
+    K_y = 121
+    K_z = 122
+    LIL_ENDIAN = 1234
+    MOUSEBUTTONDOWN = 5
+    MOUSEBUTTONUP = 6
+    MOUSEMOTION = 4
+    MOUSEWHEEL = -1
+    MULTIGESTURE = -1
+    NOEVENT = 0
+    NOFRAME = 32
+    NUMEVENTS = 32
+    OPENGL = 2
+    OPENGLBLIT = 10
+    PREALLOC = 16777216
+    QUIT = 12
+    RESIZABLE = 16
+    RLEACCEL = 16384
+    RLEACCELOK = 8192
+    SCRAP_BMP = 'image/bmp'
+    SCRAP_CLIPBOARD = 0
+    SCRAP_PBM = 'image/pbm'
+    SCRAP_PPM = 'image/ppm'
+    SCRAP_SELECTION = 1
+    SCRAP_TEXT = 'text/plain'
+    SRCALPHA = 65536
+    SRCCOLORKEY = 4096
+    SWSURFACE = 0
+    SYSWMEVENT = 13
+    TEXTEDITING = -1
+    TEXTINPUT = -1
+    TIMER_RESOLUTION = 10
+    USEREVENT = 24
+    USEREVENT_DROPFILE = 4096
+    UYVY_OVERLAY = 1498831189
+    VIDEOEXPOSE = 17
+    VIDEORESIZE = 16
+    WINDOWEVENT = -1
+    WINDOWEVENT_CLOSE = -1
+    YUY2_OVERLAY = 844715353
+    YV12_OVERLAY = 842094169
+    YVYU_OVERLAY = 1431918169
+    movie = <pygame.MissingModule object>
+    rev = ''
+    ver = '1.9.6'

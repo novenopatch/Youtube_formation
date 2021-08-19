@@ -1,0 +1,10 @@
+#!/chemin vers l'interpréteur
+# -*-coding:Utf-8 -*
+# -*-coding:Latin-1 -*
+windows
+# -*-coding:Latin-1 -* 
+import os # On importe le module os 
+print("Bonjour le monde !") 
+os.system("pause")
+LInux
+input("Appuyez sur ENTREE pour fermer ce programme...") 

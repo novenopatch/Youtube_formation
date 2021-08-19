@@ -1,0 +1,55 @@
+rotation 
+relatif
+parodie 
+technologies 
+absurdité 
+démencePremier test de write
+ 2)-Premier test de write
+
+mon_ficher = open("test1.txt", "r")
+mon_ficher
+<_io.TextIOWrapper name='test1.txt' mode='r' encoding='cp1252'>
+type(mon_ficher)
+<class '_io.TextIOWrapper'>
+mon_ficher.close()
+mon_ficher = open("test1.txt", "r")
+contenu = mon_ficher.read()
+print(contenu)
+rotation
+relatif
+parodie
+technologies
+absurditÃ©
+dÃ©mence
+mon_ficher.close()
+mon_ficher = open("test1.txt", "a")
+mon_ficher.write("Premier test de write")
+21
+mon_ficher.close()
+mon_ficher = open("test1.txt", "r")
+contenu = mon_ficher.read()
+print(contenu)
+rotation
+relatif
+parodie
+technologies
+absurditÃ©
+dÃ©mencePremier test de write
+mon_ficher.close()
+mon_ficher = open("test1.txt", "a")
+mon_ficher.write("\n 2)-Premier test de write")
+26
+mon_ficher.close()
+mon_ficher = open("test1.txt", "r")
+contenu = mon_ficher.read()
+print(contenu)
+rotation
+relatif
+parodie
+technologies
+absurditÃ©
+dÃ©mencePremier test de write
+ 2)-Premier test de write
+ mon_ficher.close()
+whith open("test1.txt","r") as variable1:
+ 
